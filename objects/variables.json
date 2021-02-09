@@ -1,0 +1,212 @@
+[
+  {
+    "qInfo": {
+      "qId": "04151cd0-76dc-4616-816c-f3962ce3cb54",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "cValorFaturadoPE",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "sum({<$1,$2,$3,$4,$5>}ValorFaturadoPE)",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "1f780527-80ad-4cf4-8060-e1e0fb298764",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "cValorDesconto",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "SUM({<$1,$2,$3,$4>}AnaliseDescontaDescontoAMMFaturado)",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "2987af80-c0bb-4911-a4eb-11a6c86b16ad",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "vMenorAno",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "=MAX(Ano,2)",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "4b8fe643-7ba2-4982-9e22-da1e21d8855b",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "sLojistaVendaMaiorAno",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "Lojista=P({<ValorVendas={\">0\"},Ano={$(vMaiorAno)}>} Lojista)",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "55a28a84-b0d1-4c63-923e-cf6b10855dbe",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "cValorCustoOcupacional",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "sum({< $1,$2,$3,$4 >}AnaliseDescontaValorCustoOcupacional)",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "56329591-82e4-4a3f-ae64-4ff59387dbf6",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "vMaiorAno",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "=MAX(Ano)",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "594546e1-ca29-4dbc-ae85-c712a435dbd7",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "cValorVendas",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "Sum({<$1,$2,$3,$4,$5>}ValorVendas)",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "59616dd2-1056-4307-8952-2d1df8f0d7c7",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "cValorFaturadoPercentual",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "Sum({<$1,$2,$3,$4>}AnaliseDescontaValorAMMPercentual)",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "5de9717c-6fe9-4318-9a0e-32558837c893",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "cValorFaturado",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "Sum({<$1,$2,$3,$4>}AnaliseDescontaValorAMMFaturado)\r\n\n\n",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "666c146c-ddad-4fc2-9002-5fbe0b2549e8",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "cValorIGPDI",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "SUM({<$1,$2,$3,$4>}ValorIGPDI)",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "ce73298d-d3be-4c7b-95a7-b95a646e53dc",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "cValorFaturadoSemDesconto",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "Sum({<$1,$2,$3,$4>}AnaliseDescontaValorAMMFaturadoSemDesconto)",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "e97bd66b-3e93-4be9-a431-c8ff8a48c722",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "cValorFaturadoPercentualSemDesconto",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "Sum({<$1,$2,$3,$4>}AnaliseDescontaValorAMMPercentualSemDesconto)  ",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "f0699c36-20cd-4cc4-a0de-290eda644757",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "vCorFlamboyant",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "#ae0600",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "f5801363-5078-4a6d-86b3-ecda2f47fe1a",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "sAcumuladoMes",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "Mes,MesNumerico={\"<=$(=MAX(MesNumerico))\"}",
+    "tags": []
+  }
+]

@@ -1,0 +1,42 @@
+///$tab Dim
+FatMestas:
+LOAD
+    MonthName(Data)			AS	%LinkFatMetas,
+    SUM(ValorVendas)		AS	ValorOrcamento,
+    SUM(ValorAMM)			AS	ValorOrcamentoAMM,
+    SUM(ValorPercentual)	AS	ValorOrcamentoPercentual,
+    SUM(ValorAluguelTotal)	AS	ValorOrcamentoAluguelTotal,
+    Sum(ValorDesconto)		AS	ValorOrcamentoDesconto,
+    SUM(ValorAluguelTotal)- Sum(ValorDesconto)	AS	ValorOrcamentoAluguelTotalMenosDesconto
+FROM 
+	[lib://2.Transform/Metas/FatMetas.qvd](qvd)
+GROUP BY
+	Data
+;
+
+
+FatIGPDI:
+LOAD
+	//Considerar um mês na frente
+    MonthName(DataReferencia,1)		AS	%LinkIGPDI,
+    ValorAcumuladoUltimos12Meses	AS	ValorIGPDI
+FROM 
+	[lib://2.Transform/IGPDI/FatoIGP_DI.qvd]
+(qvd);
+
+
+
+TabContrato:
+LOAD
+	idContrato
+    ,TipoLuc
+	,SubTipoLuc
+    ,UltimaLucLojista
+    ,GrupoSegmentoAberto
+    ,CodSegmento
+	,UltimoABLLojista
+    ,IF(Segmento='RESTAURANTE COM SERVIÇOS',1,0)	AS	FlagPoloGastronomico
+	,Segmento
+FROM
+	[lib://2.Transform/TabLucDesconto.qvd]
+(qvd);

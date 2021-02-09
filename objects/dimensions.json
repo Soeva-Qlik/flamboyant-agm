@@ -1,0 +1,124 @@
+[
+  {
+    "qInfo": {
+      "qId": "GQhLRS",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "N",
+      "qFieldDefs": [
+        "Mes"
+      ],
+      "qFieldLabels": [
+        "Mes"
+      ],
+      "title": "Mes",
+      "coloring": {
+        "changeHash": "0.20302917991576375"
+      }
+    },
+    "qMetaDef": {
+      "title": "Mes",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "GYDFdxP",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "N",
+      "qFieldDefs": [
+        "Ano"
+      ],
+      "qFieldLabels": [
+        "Ano"
+      ],
+      "title": "Ano",
+      "coloring": {
+        "changeHash": "0.5829575619579845"
+      }
+    },
+    "qMetaDef": {
+      "title": "Ano",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "PNdeSjd",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "N",
+      "qFieldDefs": [
+        "UltimaLucLojista"
+      ],
+      "qFieldLabels": [
+        "UltimaLuc"
+      ],
+      "qLabelExpression": "'LUC'",
+      "title": "UltimaLuc",
+      "coloring": {
+        "changeHash": "0.8254486636761817",
+        "colorMapRef": "PNdeSjd"
+      }
+    },
+    "qMetaDef": {
+      "title": "UltimaLuc",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "ZkJUy",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "N",
+      "qFieldDefs": [
+        "Lojista"
+      ],
+      "qFieldLabels": [
+        "Lojista"
+      ],
+      "title": "Lojista",
+      "coloring": {
+        "changeHash": "0.4997669433564713"
+      }
+    },
+    "qMetaDef": {
+      "title": "Lojista",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "vgbHnj",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "N",
+      "qFieldDefs": [
+        "Contrato"
+      ],
+      "qFieldLabels": [
+        "Contrato"
+      ],
+      "title": "Contrato",
+      "coloring": {
+        "changeHash": "0.08913608710667154"
+      }
+    },
+    "qMetaDef": {
+      "title": "Contrato",
+      "description": "",
+      "tags": []
+    }
+  }
+]

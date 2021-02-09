@@ -1,0 +1,72 @@
+///$tab Fato
+Fat:
+LOAD
+    AnaliseDescontoContratoSemDv,
+    idContrato,
+    idPlanoContas,
+    MonthName(AnaliseDescontaCompetencia)	AS	%LinkIGPDI,
+    MonthName(AnaliseDescontaCompetencia)	AS	%LinkFatMetas,
+    AnaliseDescontaContrato		AS	Contrato,
+    AnaliseDescontaCompetencia	AS	Data,
+    AnaliseDescontaCompetenciaNum,
+    AnaliseDescontaValorFaturadoOrigem,
+    AnaliseDescontaLojista		AS	Lojista,
+    ContratoAtivo,
+    AnaliseDescontaLuc			AS	LUC,
+    AnaliseDescontoAbl,
+    AnaliseDescontaRamoAtividade,
+    NumeroConta,
+    AnaliseDescontaCorredor,
+    AnaliseDescontoPercentual,
+    IdVendaDesconto,
+    FlagLojasExcessao,
+    %LinkSectionAccess,
+    FlagContasAMMTotalApresentacao,
+    FlagContasDescontoConcedido,
+    AnaliseDescontaValorFaturado,
+    AnaliseDescontaDescontoAMMFaturado,
+    AnaliseDescontaValorAMMPercentual,
+    AnaliseDescontaValorFaturadoTotal,
+    AnaliseDescontaValorAMMFaturadoSemDesconto,
+	AnaliseDescontaValorAMMPercentualSemDesconto,
+    AnaliseDescontaValorCustoOcupacional,
+    AnaliseDescontaValorAMMFaturado,
+   	AnaliseDescontaValorFaturado/(AnaliseDescontoPercentual/100)	AS	ValorFaturadoPE
+FROM 
+	[lib://2.Transform/TabAnaliseDesconto.qvd]
+(qvd);
+
+
+
+
+MapNomeFantasiaLojista:
+MAPPING
+LOAD	distinct
+idContrato,
+"Nome Fantasia"
+FROM
+	[lib://2.Transform/TabLucDesconto.qvd]
+(qvd);
+
+
+CONCATENATE(Fat)
+LOAD
+	*,
+    ApplyMap('MapNomeFantasiaLojista',idContrato,null())	AS	Lojista 
+;
+LOAD 
+	LUC,
+    MonthName("Mês Venda" )	AS	%LinkIGPDI,
+    MonthName("Mês Venda" )	AS	%LinkFatMetas,
+	Hash128("Número do Contrato", "Dígito do Contrato")  				as idContrato,
+	"Número do Contrato"&'-'&"Dígito do Contrato"	AS	Contrato, 
+  	"Dígito do Contrato"	AS	DigitoContrato,
+    Date("Mês Venda" )		AS	Data,
+  	sum( Valor ) as ValorVendas
+FROM [lib://Transform (letonia_administrador)/VS/Vendas.qvd](qvd)
+Group by   
+     LUC,
+     "Número do Contrato", 
+     "Dígito do Contrato", 
+     "Data Venda",
+     "Mês Venda";

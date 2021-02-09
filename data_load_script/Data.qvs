@@ -1,0 +1,11 @@
+///$tab Data
+TabData:
+LOAD	DISTINCT
+	Data,
+    MonthName(Data)		AS	MesAno,
+    Month(Data)			AS	Mes,
+    Year(Data)			AS 	Ano,
+    Num(Month(Data))	AS	MesNumerico
+RESIDENT
+	Fat
+;

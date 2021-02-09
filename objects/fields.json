@@ -1,0 +1,642 @@
+[
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$Field",
+    "qCardinal": 52,
+    "qTags": [
+      "$text",
+      "$ascii",
+      "$key",
+      "$hidden",
+      "$system"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$FieldNo",
+    "qCardinal": 33,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$hidden",
+      "$system"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$Fields",
+    "qCardinal": 5,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$hidden",
+      "$system"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$Info",
+    "qCardinal": 1,
+    "qTags": [
+      "$text",
+      "$ascii",
+      "$hidden",
+      "$system"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$Rows",
+    "qCardinal": 5,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$hidden",
+      "$system"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$Table",
+    "qCardinal": 5,
+    "qTags": [
+      "$text",
+      "$ascii",
+      "$key",
+      "$hidden",
+      "$system"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qName": "%LinkFatMetas",
+    "qCardinal": 84,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date",
+      "$key"
+    ],
+    "qSrcTables": [
+      "FatMestas",
+      "Fat"
+    ]
+  },
+  {
+    "qName": "%LinkIGPDI",
+    "qCardinal": 75,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date",
+      "$key"
+    ],
+    "qSrcTables": [
+      "FatIGPDI",
+      "Fat"
+    ]
+  },
+  {
+    "qName": "%LinkSectionAccess",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Fat"
+    ]
+  },
+  {
+    "qName": "AnaliseDescontaCompetenciaNum",
+    "qCardinal": 75,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "Fat"
+    ]
+  },
+  {
+    "qName": "AnaliseDescontaCorredor",
+    "qCardinal": 28,
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "Fat"
+    ]
+  },
+  {
+    "qName": "AnaliseDescontaDescontoAMMFaturado",
+    "qCardinal": 2145,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Fat"
+    ]
+  },
+  {
+    "qName": "AnaliseDescontaRamoAtividade",
+    "qCardinal": 64,
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "Fat"
+    ]
+  },
+  {
+    "qName": "AnaliseDescontaValorAMMFaturado",
+    "qCardinal": 5632,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Fat"
+    ]
+  },
+  {
+    "qName": "AnaliseDescontaValorAMMFaturadoSemDesconto",
+    "qCardinal": 3837,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Fat"
+    ]
+  },
+  {
+    "qName": "AnaliseDescontaValorAMMPercentual",
+    "qCardinal": 4665,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Fat"
+    ]
+  },
+  {
+    "qName": "AnaliseDescontaValorAMMPercentualSemDesconto",
+    "qCardinal": 4604,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Fat"
+    ]
+  },
+  {
+    "qName": "AnaliseDescontaValorCustoOcupacional",
+    "qCardinal": 23544,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Fat"
+    ]
+  },
+  {
+    "qName": "AnaliseDescontaValorFaturado",
+    "qCardinal": 5645,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Fat"
+    ]
+  },
+  {
+    "qName": "AnaliseDescontaValorFaturadoOrigem",
+    "qCardinal": 50912,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Fat"
+    ]
+  },
+  {
+    "qName": "AnaliseDescontaValorFaturadoTotal",
+    "qCardinal": 52365,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Fat"
+    ]
+  },
+  {
+    "qName": "AnaliseDescontoAbl",
+    "qCardinal": 259,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Fat"
+    ]
+  },
+  {
+    "qName": "AnaliseDescontoContratoSemDv",
+    "qCardinal": 1247,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Fat"
+    ]
+  },
+  {
+    "qName": "AnaliseDescontoPercentual",
+    "qCardinal": 28,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Fat"
+    ]
+  },
+  {
+    "qName": "Ano",
+    "qCardinal": 7,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "TabData"
+    ]
+  },
+  {
+    "qName": "CodSegmento",
+    "qCardinal": 14,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "TabContrato"
+    ]
+  },
+  {
+    "qName": "Contrato",
+    "qCardinal": 1247,
+    "qTags": [
+      "$text",
+      "$ascii"
+    ],
+    "qSrcTables": [
+      "Fat"
+    ]
+  },
+  {
+    "qName": "ContratoAtivo",
+    "qCardinal": 2,
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "Fat"
+    ]
+  },
+  {
+    "qName": "Data",
+    "qCardinal": 75,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date",
+      "$key"
+    ],
+    "qSrcTables": [
+      "Fat",
+      "TabData"
+    ]
+  },
+  {
+    "qName": "DigitoContrato",
+    "qCardinal": 10,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Fat"
+    ]
+  },
+  {
+    "qName": "FlagContasAMMTotalApresentacao",
+    "qCardinal": 2,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Fat"
+    ]
+  },
+  {
+    "qName": "FlagContasDescontoConcedido",
+    "qCardinal": 2,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Fat"
+    ]
+  },
+  {
+    "qName": "FlagLojasExcessao",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Fat"
+    ]
+  },
+  {
+    "qName": "FlagPoloGastronomico",
+    "qCardinal": 2,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "TabContrato"
+    ]
+  },
+  {
+    "qName": "GrupoSegmentoAberto",
+    "qCardinal": 14,
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "TabContrato"
+    ]
+  },
+  {
+    "qName": "IdVendaDesconto",
+    "qCardinal": 25631,
+    "qTags": [
+      "$text",
+      "$ascii"
+    ],
+    "qSrcTables": [
+      "Fat"
+    ]
+  },
+  {
+    "qName": "LUC",
+    "qCardinal": 525,
+    "qTags": [
+      "$text",
+      "$ascii"
+    ],
+    "qSrcTables": [
+      "Fat"
+    ]
+  },
+  {
+    "qName": "Lojista",
+    "qCardinal": 889,
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "Fat"
+    ]
+  },
+  {
+    "qName": "Mes",
+    "qCardinal": 12,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "TabData"
+    ]
+  },
+  {
+    "qName": "MesAno",
+    "qCardinal": 75,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "TabData"
+    ]
+  },
+  {
+    "qName": "MesNumerico",
+    "qCardinal": 12,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "TabData"
+    ]
+  },
+  {
+    "qName": "NumeroConta",
+    "qCardinal": 52,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Fat"
+    ]
+  },
+  {
+    "qName": "Segmento",
+    "qCardinal": 67,
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "TabContrato"
+    ]
+  },
+  {
+    "qName": "SubTipoLuc",
+    "qCardinal": 9,
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "TabContrato"
+    ]
+  },
+  {
+    "qName": "TipoLuc",
+    "qCardinal": 3,
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "TabContrato"
+    ]
+  },
+  {
+    "qName": "UltimaLucLojista",
+    "qCardinal": 721,
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "TabContrato"
+    ]
+  },
+  {
+    "qName": "UltimoABLLojista",
+    "qCardinal": 257,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "TabContrato"
+    ]
+  },
+  {
+    "qName": "ValorFaturadoPE",
+    "qCardinal": 5562,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Fat"
+    ]
+  },
+  {
+    "qName": "ValorIGPDI",
+    "qCardinal": 48,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "FatIGPDI"
+    ]
+  },
+  {
+    "qName": "ValorOrcamento",
+    "qCardinal": 25,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "FatMestas"
+    ]
+  },
+  {
+    "qName": "ValorOrcamentoAMM",
+    "qCardinal": 17,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "FatMestas"
+    ]
+  },
+  {
+    "qName": "ValorOrcamentoAluguelTotal",
+    "qCardinal": 25,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "FatMestas"
+    ]
+  },
+  {
+    "qName": "ValorOrcamentoAluguelTotalMenosDesconto",
+    "qCardinal": 25,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "FatMestas"
+    ]
+  },
+  {
+    "qName": "ValorOrcamentoDesconto",
+    "qCardinal": 7,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "FatMestas"
+    ]
+  },
+  {
+    "qName": "ValorOrcamentoPercentual",
+    "qCardinal": 25,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "FatMestas"
+    ]
+  },
+  {
+    "qName": "ValorVendas",
+    "qCardinal": 328581,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Fat"
+    ]
+  },
+  {
+    "qName": "idContrato",
+    "qCardinal": 2964,
+    "qTags": [
+      "$text",
+      "$ascii",
+      "$key"
+    ],
+    "qSrcTables": [
+      "TabContrato",
+      "Fat"
+    ]
+  },
+  {
+    "qName": "idPlanoContas",
+    "qCardinal": 57,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Fat"
+    ]
+  }
+]

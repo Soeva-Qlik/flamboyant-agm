@@ -1,0 +1,162 @@
+[
+  {
+    "qInfo": {
+      "qId": "35d0482f-515b-4eb5-9848-0a73836aa324",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "ValorVendasMenorAno",
+      "qDef": "Sum({<Ano={$(vMenorAno)}>}ValorVendas)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "qLabelExpression": "=vMenorAno",
+      "qNumFormat": {
+        "qType": "U",
+        "qnDec": 10,
+        "qUseThou": 0
+      },
+      "coloring": {}
+    },
+    "qMetaDef": {
+      "title": "ValorVendasMenorAno",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "KEmGHS",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "PercMaa",
+      "qDef": "(\r\n  Sum({<Ano={$(vMaiorAno)}>}ValorVendas)\n  -\n  Sum({<Ano={$(vMenorAno)}>}ValorVendas)\n)\n/\nSum({<Ano={$(vMenorAno)}>}ValorVendas)\n",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "qLabelExpression": "'Flamboyant M.A.A.'",
+      "qNumFormat": {
+        "qType": "U",
+        "qnDec": 10,
+        "qUseThou": 0
+      },
+      "coloring": {
+        "baseColor": {
+          "color": "#c33112",
+          "index": -1
+        }
+      }
+    },
+    "qMetaDef": {
+      "title": "PercMaa",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "UrpYQz",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "ValorIGPDI",
+      "qDef": "SUM(ValorIGPDI)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "qLabelExpression": "'IGP - DI'",
+      "qNumFormat": {
+        "qType": "U",
+        "qnDec": 10,
+        "qUseThou": 0
+      },
+      "coloring": {}
+    },
+    "qMetaDef": {
+      "title": "ValorIGPDI",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "XWMxQD",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "ValorVendasMaiorAno",
+      "qDef": "Sum({<Ano={$(vMaiorAno)}>}ValorVendas)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "qLabelExpression": "=vMaiorAno",
+      "qNumFormat": {
+        "qType": "U",
+        "qnDec": 10,
+        "qUseThou": 0
+      },
+      "coloring": {}
+    },
+    "qMetaDef": {
+      "title": "ValorVendasMaiorAno",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "dbd4a239-47bc-4b72-9298-ec01d1fc1046",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "PercMaaFaturamentoTotal",
+      "qDef": "rangesum(\r\n$(cValorFaturadoSemDesconto(Ano={$(vMaiorAno)})) + $(cValorFaturadoPercentualSemDesconto(Ano={$(vMaiorAno)})),\n($(cValorFaturadoSemDesconto(Ano={$(vMenorAno)})) + $(cValorFaturadoPercentualSemDesconto(Ano={$(vMenorAno)})) )*-1\n)\n/\n($(cValorFaturadoSemDesconto(Ano={$(vMenorAno)})) + $(cValorFaturadoPercentualSemDesconto(Ano={$(vMenorAno)})) )\n",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "qLabelExpression": "'Flamboyant M.A.A.'",
+      "qNumFormat": {
+        "qType": "U",
+        "qnDec": 10,
+        "qUseThou": 0
+      },
+      "coloring": {
+        "baseColor": {
+          "color": "#c33112",
+          "index": -1
+        }
+      }
+    },
+    "qMetaDef": {
+      "title": "PercMaaFaturamentoTotal",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "xYRXvuH",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "ValorVendasOrcamentoMaiorAno",
+      "qDef": "sum({<Ano={$(vMaiorAno)}>}ValorOrcamento)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "qLabelExpression": "='Meta $(vMaiorAno)'",
+      "qNumFormat": {
+        "qType": "U",
+        "qnDec": 10,
+        "qUseThou": 0
+      },
+      "coloring": {}
+    },
+    "qMetaDef": {
+      "title": "ValorVendasOrcamentoMaiorAno",
+      "description": "",
+      "tags": []
+    }
+  }
+]
